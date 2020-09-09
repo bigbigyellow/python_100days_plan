@@ -10,5 +10,9 @@
    ```cmd
    conda create -n python_study  python=3.7
    ```
+## DAY2(9-4)
+按照pytorch官方教程搭建了一个神经网络和一个图像分类器
+
+（因为自己的操作失误不小心删掉了，后面再写一遍把）
 
    
