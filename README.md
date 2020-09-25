@@ -19,9 +19,9 @@
 
 ## DAY3-DAY4(9-9/9-10)  
 按照《Python编程——从如么到实践》简单的学习了下python的简单语法
- 
+
 我个人觉得比较重要的点：
- 
+
 > python中是不能重载的
 
 关于python中的方法和类的构造和使用重点掌握一下
@@ -57,5 +57,22 @@ class erha_Dog(Dog):
 python可以支持导入模块，也支持导入模块中的方法和类
 
 ## DAY5(9-25)
-python的import不同于Java，还可以导入其中的变量。导入时注意绝对导入和相对导入。
-大致的看明白了pytorch的基本实现，跑通了一个最简单的net:
+
+### python的基本语法补充
+
+1. python的import不同于Java，还可以导入其中的变量。
+2. 导入时注意绝对导入和相对导入。
+
+### PYTORCH的学习
+
+1. 大致的看明白了pytorch的基本实现，就是官方的[60min快速上手教程](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)，还有部分细节还是需要继续注意，在这记录一下一个简单神经网络的构建、训练和测试流程：
+   1. 加载数据集
+   2. 定义net结构
+   3. 定义loss
+   4. 定义自己的optimizer
+   5. 训练集上训练自己的网络：
+      1. 正向传播
+      2. loss反向传播
+   6. 使用梯度进行参数更新
+   7. 保存模型参数，使用模型进行测试
+2. 跑通了一个最简单的net：在MNIST数据集上，一个2层CONV和一层FC的网络。使用min-batch,大致的运行了几次，似乎 batch-size = 100-200的时候效果比较好，最好达到了99以上，batch-size过大和过小时都不是很合适。
